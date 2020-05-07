@@ -24,6 +24,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9FDA1D193258084D9AC045AC /* Pods_NYLMine_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FA927B76F2B1573F94973B /* Pods_NYLMine_Tests.framework */; };
 		B6928D962C28C8FEB8EDF3AC /* Pods_NYLMine_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E54AEA0CF8D2B8C9F8E9DD /* Pods_NYLMine_Example.framework */; };
+		F57D3A132463F87D00DE7814 /* Target_ModuleMine.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D3A122463F87D00DE7814 /* Target_ModuleMine.m */; };
+		F57D3A172463F9B000DE7814 /* NYLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57D3A162463F9B000DE7814 /* NYLMineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +63,16 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834FFFBDE0BB080CEDD54117 /* Pods-NYLMine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYLMine_Example.debug.xcconfig"; path = "Target Support Files/Pods-NYLMine_Example/Pods-NYLMine_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8CDB541419BFA06C4A8ED047 /* NYLMine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NYLMine.podspec; path = ../NYLMine.podspec; sourceTree = "<group>"; };
-		A238667C3E08A57509755B96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8CDB541419BFA06C4A8ED047 /* NYLMine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NYLMine.podspec; path = ../NYLMine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A238667C3E08A57509755B96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B1BECBBDCC3DB4F6E00127FA /* Pods-NYLMine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYLMine_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NYLMine_Tests/Pods-NYLMine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B4BD28E7ED406763B479729E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B4BD28E7ED406763B479729E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C891A77BC6982B64399BA122 /* Pods-NYLMine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYLMine_Example.release.xcconfig"; path = "Target Support Files/Pods-NYLMine_Example/Pods-NYLMine_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F16A01065ECA7255D70E49B0 /* Pods-NYLMine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYLMine_Tests.release.xcconfig"; path = "Target Support Files/Pods-NYLMine_Tests/Pods-NYLMine_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F57D3A112463F87D00DE7814 /* Target_ModuleMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ModuleMine.h; sourceTree = "<group>"; };
+		F57D3A122463F87D00DE7814 /* Target_ModuleMine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleMine.m; sourceTree = "<group>"; };
+		F57D3A152463F9B000DE7814 /* NYLMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYLMineViewController.h; sourceTree = "<group>"; };
+		F57D3A162463F9B000DE7814 /* NYLMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYLMineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				F57D3A142463F98400DE7814 /* Classes */,
+				F57D3A102463F85300DE7814 /* target */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for NYLMine */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,8 +201,25 @@
 				B1BECBBDCC3DB4F6E00127FA /* Pods-NYLMine_Tests.debug.xcconfig */,
 				F16A01065ECA7255D70E49B0 /* Pods-NYLMine_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F57D3A102463F85300DE7814 /* target */ = {
+			isa = PBXGroup;
+			children = (
+				F57D3A112463F87D00DE7814 /* Target_ModuleMine.h */,
+				F57D3A122463F87D00DE7814 /* Target_ModuleMine.m */,
+			);
+			path = target;
+			sourceTree = "<group>";
+		};
+		F57D3A142463F98400DE7814 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F57D3A152463F9B000DE7814 /* NYLMineViewController.h */,
+				F57D3A162463F9B000DE7814 /* NYLMineViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +283,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -366,7 +392,9 @@
 			files = (
 				6003F59E195388D20070C39A /* NYLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* NYLViewController.m in Sources */,
+				F57D3A172463F9B000DE7814 /* NYLMineViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F57D3A132463F87D00DE7814 /* Target_ModuleMine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
